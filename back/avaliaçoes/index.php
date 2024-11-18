@@ -26,32 +26,34 @@ session_start(); //inicio da sessão
     ?>
 
     <!-- inicio do form -->
-    <form method="$_POST" action="processabd.php">
+    <form method="POST" action="processabd.php">
 
         <!-- carrega o formulario sem definir nenhuma estrela -->
         <div class="estrelas">
-        <input type="radio" name="estrela"  id=" vazio" value="" checked>
+        <input type="radio" name="estrela" value="" checked>
         
         <!-- primeira estrela -->
         <label for="estrela_um"><i class="opção fa"></i></label>
-        <input type="radio" name="estrela" id="estrela_um"  id=" vazio" value="1">
+        <input type="radio" name="estrela" id="estrela_um" value="1">
 
         <!-- segunda estrela -->
         <label for="estrela_dois"><i class="opção fa"></i></label>
-        <input type="radio" name="estrela" id="estrela_dois"  id=" vazio" value="2">
+        <input type="radio" name="estrela" id="estrela_dois" value="2">
 
         <!-- terceira estrela -->
         <label for="estrela_três"><i class="opção fa"></i></label>
-        <input type="radio" name="estrela" id="estrela_três"  id=" vazio" value="3">
+        <input type="radio" name="estrela" id="estrela_três" value="3">
 
         <!-- quarta estrela -->
         <label for="estrela_quatro"><i class="opção fa"></i></label>
-        <input type="radio" name="estrela" id="estrela_quatro"  id=" vazio" value="4">
+        <input type="radio" name="estrela" id="estrela_quatro" value="4">
 
         <!-- quinta estrela -->
         <label for="estrela_cinco"><i class="opção fa"></i></label>
-        <input type="radio" name="estrela" id="estrela_cinco"  id=" vazio" value="5"><br><br>
+        <input type="radio" name="estrela" id="estrela_cinco" value="5"><br><br>
 
+        <!-- enviar mensagem -->
+        <textarea name="mensagem" rows="4" cols="50" placeholder="comente aqui"></textarea><br><br>
         <!-- envio do questionario -->
         <input type="submit" value="enviar"><br><br>
 

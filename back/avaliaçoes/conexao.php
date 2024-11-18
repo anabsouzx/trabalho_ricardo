@@ -9,11 +9,10 @@ $port = 3306;
 
 try {
     //coneção com a porta 
-    $con = new PDO("mysql:host=$host; dbname=" . $dbname, $user, $pass);
+    $conn = new PDO("mysql:host=$host; dbname=" . $dbname, $user, $pass);
 
     //echo "conexão realizada com sucesso.";
 } catch(PDOexception $err) {
-    echo "erro: conexão com bd não realizado com sucesso. erro gerado". $err->getmessage();
+    echo "Erro: Conexão com banco de dados não realizado com sucesso. Erro gerado " . $err->getMessage();
 }
     //fim da conexão
-?>
