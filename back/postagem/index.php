@@ -8,8 +8,13 @@
 </head>
 <body>
     <div class="container">
+                <!-- título da página -->
         <h1>Sistema de posts teste</h1>
+
+                <!-- link para criar postagens -->
         <a href="form.php">Nova postagem</a><br/>
+        
+                <!-- link para ver postagens ja criadas -->
         <a href="posts.php">Ver postagens</a><br/>
     </div>
 </body>

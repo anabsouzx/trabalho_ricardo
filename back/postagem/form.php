@@ -12,9 +12,11 @@
                     <!-- campo para o titulo -->
             <label for="titulo">Titulo da Noticia</label><br/>
             <input type="text" name="titulo" maxlength="500" id="titulo"><br/>
+
                     <!-- campo para a noticia -->
             <br/><label for="conteudo">Conteudo da Noticia</label><br/>
             <textarea name="conteudo" id="conteudo" required></textarea><br/>
+            
                     <!-- botao para enviar -->
             <input type="submit" value="Publicar">
         </form>
