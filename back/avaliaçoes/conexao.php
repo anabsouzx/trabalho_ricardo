@@ -9,7 +9,7 @@ $port = 3306;
 
 try {
     //coneção com a porta 
-    $con = new PDO("mysql:host=$host; dbname=" . $dbname, $user, $pass);
+    $conn = new PDO("mysql:host=$host; dbname=" . $dbname, $user, $pass);
 
     //echo "conexão realizada com sucesso.";
 } catch(PDOexception $err) {
