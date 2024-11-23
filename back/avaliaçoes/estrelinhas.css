@@ -21,3 +21,11 @@
 .estrelas input[type=radio]:checked~label i.fa::before{
     color: var(--cinza);
 }
+
+.estrela-preenchida{
+    color: var(--violeta);
+}
+
+.estrela-vazia{
+    color: var(--cinza);
+}
