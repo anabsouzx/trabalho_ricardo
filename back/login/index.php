@@ -6,9 +6,11 @@
     <title>Login</title>
 </head>
 <body>
+    <?php include '../componentes/navegacao.php'; ?>
     <h2>Login</h2>
 
     <?php include 'processa_login.php'; ?>
+    
 
     <form method="POST" action="">
         <label for="username">Nome de usuário:</label>

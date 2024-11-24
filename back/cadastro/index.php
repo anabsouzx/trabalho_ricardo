@@ -6,6 +6,7 @@
     <title>Cadastro de Usuários</title>
 </head>
 <body>
+    <?php include '../componentes/navegacao.php'; ?>
     <h2>Cadastro de Usuários</h2>
 
     <?php include 'processa_cadastro.php'; ?>
