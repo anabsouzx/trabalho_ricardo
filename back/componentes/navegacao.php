@@ -1,4 +1,5 @@
 <style>
+
         nav {
             background-color: #f8f9fa;
             padding: 10px;
@@ -7,9 +8,6 @@
             margin: 0 10px;
             text-decoration: none;
             color: #007bff;
-        }
-        main {
-            padding: 20px;
         }
     </style>
 

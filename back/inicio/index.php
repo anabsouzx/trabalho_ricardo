@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
 <body>
     <?php include '../componentes/navegacao.php'; ?>
-   
-    <h2>Filtrar Notícias</h2>
+   <div class="">
+        <h2>Filtrar Notícias</h2>
+   </div>
+    
     <form method="GET" action="index.php">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome"><br><br>
@@ -24,7 +27,7 @@
             $stmt->execute();
             $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
             foreach ($categorias as $categoria) {
-                echo "<option value='{$categoria['id']}'>{$categoria['nome']}</option>";
+                echo "<option class='teste' value='{$categoria['id']}'>{$categoria['nome']}</option>";
             }
             ?>
         </select><br><br>
@@ -66,7 +69,7 @@
 
         if ($noticias) {
             foreach ($noticias as $noticia) {
-                echo "<article>";
+                echo "<article class='teste'>";
                 echo "<h3>{$noticia['titulo']}</h3>";
                 echo "<p>{$noticia['texto']}</p>";
                 echo "<p><strong>Data de Publicação:</strong> {$noticia['dataPublicacao']}</p>";
