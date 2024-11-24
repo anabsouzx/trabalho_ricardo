@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Notícia</title>
+    <link rel="stylesheet" type="text/css" href="noticias.css">
 </head>
 <body>
     <script src="script.js"></script>
     <?php include '../componentes/navegacao.php'; ?>
-    <h2>Criar Notícia</h2>
+    <h2 class="titulo">Criar Notícia</h2>
 
     <?php
     include 'processo_criar_noticias.php';
@@ -19,7 +20,7 @@
     $stmt->execute();
     $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
-
+<section class="corpo">
 <form method="POST" action="" onsubmit="return validarFormulario()">
         <label for="titulo">Título:</label>
         <input type="text" id="titulo" name="titulo" required><br><br>
@@ -40,5 +41,6 @@
 
         <button type="submit">Criar Notícia</button>
     </form>
+</section>
 </body>
 </html>

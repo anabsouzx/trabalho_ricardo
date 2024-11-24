@@ -76,7 +76,7 @@
     }
     </style>
 <header class="cabecalho">
-    <img class ="cabecalho-imagem" src ="../trabalho" alt="logo da página">
+    <img class ="cabecalho-imagem" src =".../trabalho_ricardo/back/imagens/Trinkly.png" alt="logo da página">
     <nav class="nav">
         <a href="../inicio" class="nav-item">Início</a>
         <a href="../categorias" class="nav-item">Criar Categorias</a>

@@ -1,31 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
  
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 body {
     font-size: 100%;
     background: linear-gradient(68.15deg, #0d0369 16.62%, #565564 85.61%);
-}
+    align-content: center;
 
-.titulo {
+}
+.titulo{
     text-align: center;
-    font-size: 30px;
     color: white;
+    font-size: 50px;
     padding: 20px;
 }
-.criacao {
+.corpo{
     text-align: center;
-    align-items: flex-end;
-    font-size: 18px;
-    padding: 20px;
-    background-color: #ffffff;
-    width: 30%;
-    margin: 0 35%;
+    background-color: white;
+    margin: 0 35% ;
     border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
-
-
