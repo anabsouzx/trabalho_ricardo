@@ -1,3 +1,91 @@
-body {
-    background-color: rgb(56, 12, 128);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #0d0369 16.62%, #565564 85.61%);
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: "Righteous", system-ui;
+    color: rgba(255, 242, 231, 1);
+    font-weight: 400px;
+    font-size: 64px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: "Sarala", system-ui;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+.nome_noticia {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    margin: 0 40%;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tabela_noticia {
+    margin: 0 45%;
+    border-radius: 5px;
+}
+
+.categoria_inicio {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    margin: 0 40%;
+    font-size: 18px;
+    padding: 5px;
+}
+.categoria_tabela {
+    margin: 0 45.1%;
+    border-radius: 5px;
+}
+
+.btn-filtro {
+    text-align: center;
+    justify-content: center;
+    color: #380c80;
+    display: flex;
+    margin: 1rem 57rem;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.meio {
+    text-align: center;
+    justify-content: center;
+    color: #380c80;
+    background-color: rgb(231, 228, 228);
+    border-radius: 40px;
+    max-width: 30%;
+    margin:  10% 35%;
+}
+

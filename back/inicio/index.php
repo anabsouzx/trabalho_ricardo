@@ -9,16 +9,19 @@
 </head>
 <body>
     <?php include '../componentes/navegacao.php'; ?>
-   <div class="">
-        <h2>Filtrar Notícias</h2>
-   </div>
+   <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Filtrar Notícias</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Seu portal de conteúdos educativos para programadores de todas as idades.</h2><hr>
+            </div>
+    </section>
     
     <form method="GET" action="index.php">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
+        <label for="nome" class="nome_noticia">Nome:</label>
+        <input type="text" id="nome" name="nome" class="tabela_noticia"><br><br>
 
-        <label for="categoria_id">Categoria:</label>
-        <select id="categoria_id" name="categoria_id">
+        <label for="categoria_id" class="categoria_inicio">Categoria:</label>
+        <select id="categoria_id" name="categoria_id" class="categoria_tabela">
             <option value="">Selecione uma categoria</option>
             <?php
             include '../bd/conexao.php';
@@ -32,11 +35,11 @@
             ?>
         </select><br><br>
 
-        <button type="submit">Filtrar</button>
+        <button type="submit" class="btn-filtro">Filtrar</button><hr>
     </form>
 
-    <main>
-        <h2>Notícias</h2>
+    <main class="meio">
+        <h2>Notícias:</h2>
         <?php
         include '../bd/conexao.php';
 
@@ -75,7 +78,7 @@
                 echo "<p><strong>Data de Publicação:</strong> {$noticia['dataPublicacao']}</p>";
                 echo "<p><strong>Autor:</strong> {$noticia['autor']}</p>";
                 echo "<p><strong>Categoria:</strong> {$noticia['categoria_nome']}</p>";
-                echo "</article><hr>";
+                echo "</article>";
             }
         } else {
             echo "<p>Nenhuma notícia encontrada.</p>";
