@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #6159a8 16.62%, #565564 85.61%);
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    outline: none;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+    transform: scaleX(1);
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+}
+
+.criar_btn {
+    border-radius: 4px;
+    background-color: #380c80;
+    color: white;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    max-width: 200px;
+    cursor: pointer;
+    
+}
+
+.input-data select {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    background: transparent;
+    outline: none;
+    appearance: none;
+    padding: 0 5px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.input-data select:focus {
+    border-bottom: 2px solid #4158d0;
+    color: #4158d0;
+}
+
+.input-data select:focus ~ label,
+.input-data select:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data select:focus ~ .underline:before,
+.input-data select:valid ~ .underline:before {
+    transform: scaleX(1);
+}
+
