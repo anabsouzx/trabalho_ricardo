@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
- 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body {
     font-size: 100%;
-    background: linear-gradient(68.15deg, #0d0369 16.62%, #565564 85.61%);
+    background: linear-gradient(68.15deg, #6159a8 16.62%, #565564 85.61%);
 }
 
 .conteudo-principal {
@@ -37,7 +38,6 @@ body {
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 24px;
-
 }
 
 .nome_noticia {
@@ -64,28 +64,86 @@ body {
     font-size: 18px;
     padding: 5px;
 }
-.categoria_tabela {
-    margin: 0 45.1%;
-    border-radius: 5px;
-}
 
 .btn-filtro {
-    text-align: center;
-    justify-content: center;
-    color: #380c80;
-    display: flex;
-    margin: 1rem 57rem;
     border-radius: 5px;
     padding: 2px 5px;
+    background-color: #380c80;
+    color: white;
+    cursor: pointer;
 }
 
 .meio {
-    text-align: center;
-    justify-content: center;
-    color: #380c80;
-    background-color: rgb(231, 228, 228);
-    border-radius: 40px;
-    max-width: 30%;
-    margin:  10% 35%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Fundo similar ao mostrado na imagem */
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
+.noticia-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.noticia-container h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.noticia-container p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.noticia-container p strong {
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pesquisa_container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pesquisa-select {
+    width: 225px;
+}
+
+.pesquisa-input {
+    background-color: rgba(255,255,255);
+    padding: 8px 16px;
+    border: 2px solid white;
+    width: 250px;
+    border-radius: 2px;
+}
+
+.noticia-nome {
+    display: flex;
+    justify-content: center;
+    margin: 12px auto;
+    color: white;
+}

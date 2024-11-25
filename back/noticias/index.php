@@ -20,26 +20,35 @@
     $stmt->execute();
     $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
-<section class="corpo">
-<form method="POST" action="" onsubmit="return validarFormulario()">
-        <label for="titulo">Título:</label>
-        <input type="text" id="titulo" name="titulo" required><br><br>
+<section>
+    <form class="formulario" method="POST" action="" onsubmit="return validarFormulario()">
+        <div class="input-data">
+            <input type="text" id="titulo" name="titulo" required>
+            <div class="underline"></div>
+            <label for="titulo">Título:</label>
+        </div>
 
-        <label for="texto">Texto:</label>
-        <textarea id="texto" name="texto" required></textarea><br><br>
+        <div class="input-data">
+            <input id="texto" name="texto" required></textarea>
+            <div class="underline"></div>
+            <label for="texto">Texto:</label>
+        </div>
+        
+        <div class="input-data">
+            <input type="text" id="autor" name="autor" required>
+            <label for="autor">Autor:</label>
+        </div>
 
-        <label for="autor">Autor:</label>
-        <input type="text" id="autor" name="autor" required><br><br>
+        <div class="input-data">
+            <select id="categoria_id" name="categoria_id" required>
+                <option value="">Selecione uma categoria</option>
+                <?php foreach ($categorias as $categoria): ?>
+                    <option value="<?php echo $categoria['id']; ?>"><?php echo $categoria['nome']; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
 
-        <label for="categoria_id">Categoria:</label>
-        <select id="categoria_id" name="categoria_id" required>
-            <option value="">Selecione uma categoria</option>
-            <?php foreach ($categorias as $categoria): ?>
-                <option value="<?php echo $categoria['id']; ?>"><?php echo $categoria['nome']; ?></option>
-            <?php endforeach; ?>
-        </select><br><br>
-
-        <button type="submit">Criar Notícia</button>
+        <button class="criar_btn" type="submit">Criar Notícia</button>
     </form>
 </section>
 </body>

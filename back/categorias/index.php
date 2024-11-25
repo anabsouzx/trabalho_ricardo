@@ -9,16 +9,21 @@
 <body>
     <?php include '../componentes/navegacao.php'; ?>
     
-            <h2 class="titulo">Criar Categoria</h2>
+    <h2 class="titulo">Criar Categoria</h2>
 
-        <?php include 'processo_criar_categoria.php'; ?>
+    <?php include 'processo_criar_categoria.php'; ?>
 
-        <form method="POST" action="" class="criacao">
-            <label for="nome" >Nome da Categoria:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <button type="submit" class="btn-cate">Criar Categoria</button>
+    <section>
+        <form class="formulario" method="POST" action="" class="criacao">
+            <div class="input-data">
+                <input type="text" id="nome" name="nome" required>
+                <div class="underline"></div>
+                <label for="nome" >Nome da Categoria:</label>
+            </div>
+
+            <button class="criar_btn" type="submit" class="btn-cate">Criar Categoria</button>
         </form>
-   
+    </section>
     
 </body>
 </html>

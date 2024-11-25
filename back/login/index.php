@@ -12,12 +12,20 @@
 
     <?php include 'processa_login.php'; ?>
     <section class="corpo">
-        <form method="POST" action="">
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required><br><br>
-            <button type="submit">Entrar</button>
+        <form class="formulario" method="POST" action="">
+            <div class="input-data">
+                <input type="text" id="username" name="username" required>
+                <div class="underline"></div>
+                <label for="username">Nome de usuário:</label>
+            </div>
+            
+            <div class="input-data">
+                <input type="password" id="senha" name="senha" required>
+                <div class="underline"></div>
+                <label for="senha">Senha:</label>
+            </div>
+            
+            <button class="criar_btn" type="submit">Entrar</button>
         </form>
     </section>
 </body>
